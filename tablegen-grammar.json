@@ -1,8 +1,6 @@
 {
   "name": "TableGen",
-  "fileTypes": [
-    "td"
-  ],
+  "fileTypes": ["td"],
   "patterns": [
     {
       "include": "#comments"
@@ -36,7 +34,7 @@
     "comments": {
       "patterns": [
         {
-          "match": "\/\/.*$",
+          "match": "//.*$",
           "name": "comment.line.double-slash.tablegen"
         },
         {

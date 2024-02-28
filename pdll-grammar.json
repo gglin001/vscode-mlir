@@ -1,8 +1,6 @@
 {
   "name": "PDLL",
-  "fileTypes": [
-    "pdll"
-  ],
+  "fileTypes": ["pdll"],
   "patterns": [
     {
       "include": "#comment"
@@ -34,7 +32,7 @@
   ],
   "repository": {
     "comment": {
-      "match": "\/\/.*$",
+      "match": "//.*$",
       "name": "comment.line.double-slash.pdll"
     },
     "string": {

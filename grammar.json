@@ -1,8 +1,6 @@
 {
   "name": "MLIR",
-  "fileTypes": [
-    "mlir"
-  ],
+  "fileTypes": ["mlir"],
   "patterns": [
     {
       "include": "#comment"
@@ -16,7 +14,7 @@
   ],
   "repository": {
     "comment": {
-      "match": "\/\/.*$",
+      "match": "//.*$",
       "name": "comment.line.double-slash.mlir"
     },
     "number": {
