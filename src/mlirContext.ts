@@ -157,6 +157,9 @@ export class MLIRContext implements vscode.Disposable {
         (database) => `--${languageName}-compilation-database=${database}`,
       ),
     );
+
+    additionalServerArgs.push("--log=verbose");
+    // additionalServerArgs.push("--import-all-index");
   }
 
   /**
@@ -226,6 +229,8 @@ export class MLIRContext implements vscode.Disposable {
         filepathsToWatch,
         additionalServerArgs,
       );
+    } else if (languageName == "mlir") {
+      additionalServerArgs.push("--log=verbose");
     }
 
     // Try to activate the language client.
