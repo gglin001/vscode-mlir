@@ -3,5 +3,7 @@
 .gitignore
 vsc-extension-quickstart.md
 
+.github/**
+
 # local misc
 demos/**
